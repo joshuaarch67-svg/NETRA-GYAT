@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NETRA-ROVER MONITORING SYSTEM</title>
     <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
 </head>
 <body>
     <header class="topbar">
         <!-- this is the logo of the system -->
         <div class="brand">
-            <div class="brand logo">N</div>
+            <div class="brand-logo">N</div>
             <div>
                 <h1>NETRA-ROVER</h1>
                 <p>robot monitoring control system</p>
@@ -30,10 +31,40 @@
             <span>SYSTEM ONLINE</span>
             <strong id="clock">--:--:--</strong>
          </div>
-         <h1>this is the next part </h1>
 
          <!-- this is for dispatch mission button -->
           <button name="dispatch-open" type="button">Dispatch Mission</button>
     </header>
+
+    <!-- this is the main content area -->
+    <main class="page-content">
+        <section id="kpi-grid" class="kpi-grid">
+            <article class="kpi-card">
+                <span>ROVER ONLINE</span>
+                <h1 id="online-count">6/6</h1>
+                <p>Active Rover Units</p>
+            </article>
+            <article class="kpi-card">
+                <span>MISSION STATUS</span>
+                <h1 id="mission-status">3/6</h1>
+                <p>Active Missions</p>
+            </article>
+            <article class="kpi-card">
+                <span>ALERTS</span>
+                <h1 id="alert-count">2</h1>
+                <p>Active Alerts</p>
+            </article>
+            <article class="kpi-card">
+                <span>BATTERY STATUS</span>
+                <h1 id="battery-status">75%</h1>
+                <p>Average Battery Level</p>
+            </article>
+            <article class="kpi-card">
+                <span>DATA USAGE</span>
+                <h1 id="data-usage">1.2GB</h1>
+                <p>Data Transmitted</p>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
